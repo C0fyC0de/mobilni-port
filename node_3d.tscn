@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://wpd63oknycti"]
+
+[ext_resource type="PackedScene" uid="uid://iwl43uvksgby" path="res://controlUI.tscn" id="1_oy0dm"]
+[ext_resource type="PackedScene" uid="uid://sghc7cd4j3sa" path="res://typhoonver_4.tscn" id="2_hxxqy"]
+[ext_resource type="PackedScene" uid="uid://dlwi34a613qta" path="res://smooth.glb" id="2_p5tmy"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7rsug"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Control" parent="." instance=ExtResource("1_oy0dm")]
+
+[node name="StaticBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 68, 34.292)
+mass = 50.0
+
+[node name="smooth4" parent="StaticBody3D" instance=ExtResource("2_p5tmy")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(10.11, 0, 0, 0, 10.11, 0, 0, 0, 10.11, 0, 0, 0)
+shape = SubResource("SphereShape3D_7rsug")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, -114, 8, 112)
+
+[node name="smooth" parent="." instance=ExtResource("2_p5tmy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, -8, -54)
+
+[node name="smooth2" parent="." instance=ExtResource("2_p5tmy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 40, -54)
+
+[node name="smooth5" parent="." instance=ExtResource("2_p5tmy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 40, 125.344)
+
+[node name="smooth3" parent="." instance=ExtResource("2_p5tmy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.615, -114, 31.1823)
+
+[node name="smooth6" parent="." instance=ExtResource("2_p5tmy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.615, 93.7395, 31.1823)
+
+[node name="typhoonver4" parent="." instance=ExtResource("2_hxxqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 16, 59)
+
+[node name="Camera3D" type="Camera3D" parent="typhoonver4"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2, 764, -59)

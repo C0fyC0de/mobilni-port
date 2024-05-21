@@ -1,0 +1,78 @@
+[gd_scene load_steps=7 format=3 uid="uid://iwl43uvksgby"]
+
+[ext_resource type="Texture2D" uid="uid://bbpjnhb5h3p0n" path="res://arrow - desno.png" id="1_o60jn"]
+[ext_resource type="Texture2D" uid="uid://hadj28wedsta" path="res://arrow – dolje.png" id="2_j2viv"]
+[ext_resource type="Texture2D" uid="uid://2plvy625qak8" path="res://arrow - ljevo.png" id="3_7uo0l"]
+[ext_resource type="Texture2D" uid="uid://dkneir7xxpye4" path="res://arrow – gore.png" id="4_qgghg"]
+[ext_resource type="Texture2D" uid="uid://pirbamuoueii" path="res://arrowcurved.png" id="5_fn1mv"]
+[ext_resource type="Texture2D" uid="uid://dsk23sjavcrso" path="res://arrowcurvedkopija.png" id="6_gctmu"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonDesno" type="Button" parent="."]
+layout_mode = 2
+offset_left = 193.99
+offset_top = 462.0
+offset_right = 237.989
+offset_bottom = 519.0
+icon = ExtResource("1_o60jn")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButtonDolje" type="Button" parent="."]
+layout_mode = 2
+offset_left = 107.0
+offset_top = 554.72
+offset_right = 164.0
+offset_bottom = 598.72
+icon = ExtResource("2_j2viv")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButtonLijevo" type="Button" parent="."]
+layout_mode = 2
+offset_left = 30.0
+offset_top = 462.0
+offset_right = 74.0
+offset_bottom = 519.0
+icon = ExtResource("3_7uo0l")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButtonGore" type="Button" parent="."]
+layout_mode = 2
+offset_left = 107.0
+offset_top = 381.0
+offset_right = 164.0
+offset_bottom = 425.0
+icon = ExtResource("4_qgghg")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButtonLijevoZakret" type="Button" parent="."]
+layout_mode = 0
+offset_left = 930.695
+offset_top = 462.0
+offset_right = 1014.7
+offset_bottom = 556.0
+rotation = 1.5708
+icon = ExtResource("6_gctmu")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ButtonDesnoZakret" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1095.85
+offset_top = 462.0
+offset_right = 1179.85
+offset_bottom = 556.0
+rotation = 1.5708
+icon = ExtResource("5_fn1mv")
+icon_alignment = 1
+expand_icon = true
